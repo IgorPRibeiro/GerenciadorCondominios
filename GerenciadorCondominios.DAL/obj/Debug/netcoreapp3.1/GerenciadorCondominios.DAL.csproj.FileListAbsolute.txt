@@ -1,0 +1,15 @@
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.deps.json
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.runtimeconfig.json
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.runtimeconfig.dev.json
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.dll
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.pdb
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.dll
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\bin\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.pdb
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.csprojAssemblyReference.cache
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.AssemblyInfoInputs.cache
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.AssemblyInfo.cs
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.csproj.CoreCompileInputs.cache
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.csproj.CopyComplete
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.dll
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.pdb
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.genruntimeconfig.cache
