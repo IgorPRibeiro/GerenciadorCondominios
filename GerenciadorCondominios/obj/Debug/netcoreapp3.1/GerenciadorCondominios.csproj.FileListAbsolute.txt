@@ -77,3 +77,4 @@ C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios\obj\Debug\netcoreapp3.1\GerenciadorCondominios.dll
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios\obj\Debug\netcoreapp3.1\GerenciadorCondominios.pdb
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios\obj\Debug\netcoreapp3.1\GerenciadorCondominios.genruntimeconfig.cache
+C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Registro.cshtml.g.cs
