@@ -8,7 +8,6 @@ C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.csprojAssemblyReference.cache
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.AssemblyInfoInputs.cache
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.AssemblyInfo.cs
-C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.csproj.CoreCompileInputs.cache
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.csproj.CopyComplete
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.dll
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.DAL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.DAL.pdb

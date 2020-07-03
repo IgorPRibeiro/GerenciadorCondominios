@@ -1,0 +1,8 @@
+DAL
+	Interfaces = declara os métodos
+	Repositorio = implementações desses métodos
+Alguns métodos são comuns em todas as classe (listagem,exclusão,inserssão e atualização).Então adicionaremos em arquicos como  IRepositorioGenerico.cs dentro de Interfaces, assim não precisaremos reescrever os métodos, basta herdarem eles de uma classe então utizaremos-os.
+
+Quando nossos métodos o IRepositorioGenerico.cs(em Interfaces) estiverem prontos vamos implementa-los no RepositorioGenerico.cs(em Repositorio)
+
+Nós manipulamos os nossos dados a partir da classe contexto
