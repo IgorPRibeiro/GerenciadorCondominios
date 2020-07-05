@@ -1,0 +1,7 @@
+Para usar o repositorio precisamos:
+1°Registrá-lo no startup.cs
+2°Injeção de dependecia no controller
+Voltando ao post dos registros
+1°Verificamos se os registros são validos
+--
+mildware = componente que realiza uma determinada função

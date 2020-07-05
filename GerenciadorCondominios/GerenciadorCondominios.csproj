@@ -18,4 +18,8 @@
     <ProjectReference Include="..\GerenciadorCondominios.DAL\GerenciadorCondominios.DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Imagens\" />
+  </ItemGroup>
+
 </Project>

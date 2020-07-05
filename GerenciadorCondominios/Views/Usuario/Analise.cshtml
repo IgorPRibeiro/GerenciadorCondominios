@@ -1,0 +1,59 @@
+﻿@model string
+
+@{ 
+    ViewData["Title"] = "Conta em aprovação";
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <!--Carraga o script caso ele esteja em produção ou em densevolvimento-->
+        <!--Quando o codigo esta em densevolvimento não usamos bibliotecas .min(minificadas)-->
+        <!--Pois é mais facil debugar o código-->
+        <!--PS:USANDO MATERIALIZE CDN(presisamos do JQUERY)-->
+        <environment include="Development">
+            <!-- Compiled and minified CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+            <!--Import Google Icon Font-->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            
+        </environment>
+        <environment exclude="Development">
+            <!-- Compiled and minified CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            <!--Import Google Icon Font-->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            
+        </environment>
+        <title>Conta em aprovação</title>
+    </head>
+    <body class="white-text blue darken-2 container" style="position:absolute;top:40%;left:20%">
+
+        <div>
+            <h1>Conta em aprovação</h1>
+            <!--arrobaModel é o atributo que está recebendo ali no caso o nome do usuario que está tentando se registrar-->
+            <h5>Olá, @Model ! Sua conta está sob análise. Em breve, você poderá acessar o sistema</h5>
+        </div>
+
+
+
+        <environment include="Development">
+            <!-- Compiled and minified JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+            <!--JQUERY CDN-->
+            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+            <script src="~/js/IniciarMascaras.js"></script>
+        </environment>
+        <!--Se não estiver em densevolvimento carrega o que estiver dentro-->
+        <environment exclude="Development">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+            <script src="~/js/IniciarMascaras.min.js"></script>
+
+        </environment>
+    </body>
+</html>

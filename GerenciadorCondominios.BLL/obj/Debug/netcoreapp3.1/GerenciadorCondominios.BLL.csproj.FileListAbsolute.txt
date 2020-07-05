@@ -6,4 +6,3 @@ C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.BLL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.csproj.CoreCompileInputs.cache
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.BLL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.dll
 C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.BLL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.pdb
-C:\Users\pinhe\Documents\Csharpzin\GerenciadorCondominios\GerenciadorCondominios.BLL\obj\Debug\netcoreapp3.1\GerenciadorCondominios.BLL.csprojAssemblyReference.cache
