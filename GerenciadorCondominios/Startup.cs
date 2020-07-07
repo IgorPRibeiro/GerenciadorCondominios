@@ -36,7 +36,6 @@ namespace GerenciadorCondominios
             services.AddAuthentication();
             services.AddAuthorization();
 
-            services.AddTransient<IUsuarioRepositorio, IUsuarioRepositorio>();
             services.AddControllersWithViews();
         }
 
