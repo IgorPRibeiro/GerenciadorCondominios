@@ -110,7 +110,7 @@ namespace GerenciadorCondominios.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login()
+        public async Task<IActionResult> Login()
         {
 
             if (User.Identity.IsAuthenticated)
@@ -167,6 +167,13 @@ namespace GerenciadorCondominios.Controllers
                 }
             }
             return View(model);
+        }
+
+        [HttpPost]
+        public  async Task<IActionResult> Logout()
+        {
+            await _usuarioRepositorio.DeslogarUsuario();
+            return RedirectToAction("Login");
         }
 
         public IActionResult Analise(string nome)

@@ -4,22 +4,57 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - GerenciadorCondominios</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <environment include="Development">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+        <!--Import Google Icon Font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--css do projeto-->
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Import Google Icon Font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--css do projeto-->
+        <link rel="stylesheet" href="~/css/site.min.css" />
+    </environment>
 </head>
 <body>
     <header>
-        
+        <nav class="grey darken-3">
+            <div class="nav-wrapper navbar-fixed">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="nav-item"><a class="nav-link" asp-controller="Usuario" asp-action="MinhasInformacoes">Minhas Informações</a></li>
+                    <li class="nav-item"><partial name="_Logout" /></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <div class="conteudo-pirncipal">
+        <div class="body-content">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
     </div>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+    <environment include="Development">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+        <!--JQUERY CDN-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </environment>
+    <environment exclude="Development">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--JQUERY CDN-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </environment>
 </body>
 </html>
