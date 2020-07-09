@@ -16,8 +16,13 @@ namespace GerenciadorCondominios.DAL.Interfaces
         //Esse metodo retorna o IdentityResult
         //IdentityResult = sera o status da operacao
         //se der certo ira retorna um sucess e se der um erro retornara um fail,e assim, vai poder percorrer os erros que foram retornados
+        Task DeslogarUsuario();
         Task<IdentityResult> CriarUsuario(Usuario usuario, string senha);
 
         Task IncluirUsuarioEmFuncao(Usuario usuario, string funcao);
+
+        Task<Usuario> PegarUsuarioPeloEmail(string email);
+
+        
     }
 }

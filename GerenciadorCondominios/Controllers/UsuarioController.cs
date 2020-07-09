@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 using GerenciadorCondominios.BLL.Models;
 using GerenciadorCondominios.DAL;
@@ -108,9 +109,64 @@ namespace GerenciadorCondominios.Controllers
             return View(model);
         }
 
+        [HttpGet]
         public IActionResult Login()
         {
+
+            if (User.Identity.IsAuthenticated)
+                await _usuarioRepositorio.DeslogarUsuario();
+
             return View();
+        }
+
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            //verificar se os dados são validos
+            if (ModelState.IsValid)
+            {
+                Usuario usuario = await _usuarioRepositorio.PegarUsuarioPeloEmail(model.Email);
+                if (usuario != null)
+                {
+                    if (usuario.Status == StatusConta.Analisando)
+                    {
+                        return View("Analise", usuario.UserName);
+                    }
+
+                    else if (usuario.Status == StatusConta.Reprovado)
+                    {
+                        return View("Reprovado", usuario.UserName);
+                    }
+                    else if (usuario.PrimeiroAcesso == true)
+                    {
+                        return View("RedefinirSenha", usuario);
+                    }
+                    else
+                    {
+                        PasswordHasher<Usuario> passwordHasher = new PasswordHasher<Usuario>();
+
+                        if (passwordHasher.VerifyHashedPassword(usuario,usuario.PasswordHash, model.Senha) != PasswordVerificationResult.Failed)
+                        {
+                            //false para nao lembrar os dados do usuario
+                            await _usuarioRepositorio.LogarUsuario(usuario, false);
+                            return RedirectToAction("Index");
+                        }
+
+                        else
+                        {
+                            ModelState.AddModelError("", "Usuario e/ou senhas inválidos");
+                            return View(model);
+                        }
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Email e/ou senhas inválidos");
+                    return View(model);
+                }
+            }
+            return View(model);
         }
 
         public IActionResult Analise(string nome)

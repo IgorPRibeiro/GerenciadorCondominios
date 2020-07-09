@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Aqui é a implemantacao dos métodos criados no IUsuarioRepositorio
 namespace GerenciadorCondominios.DAL.Repositorio
 {
     //RepositorioGenerico<Usuario>, IUsuarioRepositorio => usamos "," para mostrar qual interface usar
@@ -66,11 +66,37 @@ namespace GerenciadorCondominios.DAL.Repositorio
             }
         }
 
+        public async Task DeslogarUsuario()
+        {
+            try
+            {
+                await _gerenciadorLogin.SignOutAsync();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
         public int VerificarSeExisteRegistro()
         {
             try
             {
                 return _contexto.Usuarios.Count();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public async Task<Usuario> PegarUsuarioPeloEmail(string email)
+        {
+            try
+            {
+                return await _gerenciadorUsuario.FindByEmailAsync(email);
             }
             catch (Exception ex)
             {
