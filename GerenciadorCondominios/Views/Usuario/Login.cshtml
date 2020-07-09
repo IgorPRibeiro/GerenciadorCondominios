@@ -1,0 +1,92 @@
+﻿@model GerenciadorCondominios.ViewModel.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login de moradores";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Novo morador</title>
+    <!--Carraga o script caso ele esteja em produção ou em densevolvimento-->
+    <!--Quando o codigo esta em densevolvimento não usamos bibliotecas .min(minificadas)-->
+    <!--Pois é mais facil debugar o código-->
+    <!--PS:USANDO MATERIALIZE CDN(presisamos do JQUERY)-->
+    <environment include="Development">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+        <!--Import Google Icon Font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--css do projeto-->
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Import Google Icon Font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--css do projeto-->
+        <link rel="stylesheet" href="~/css/site.min.css" />
+    </environment>
+</head>
+<body class="corpo">
+
+
+    <div class="loginform">
+        <div class="center-align">
+            <h4><i class="large material-icons">account_circle</i></h4>
+            <h5>Login</h5>
+        </div>
+
+        <div>
+            
+            <form asp-action="Login" >
+                <div class="campos">
+                    <!--asp-validation-summary(a validação sera apenas no model)-->
+                    <div class="red-text text-darken-4" asp-validation-summary="ModelOnly"></div>
+
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input asp-for="Email" class="validate" id="Email" />
+                            <label asp-for="Email" id="Email"></label>
+                            <span asp-valdation-for="Email" class="red-text text-darken-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input asp-for="Senha" class="validate" type="password" id="Senha" />
+                            <label asp-for="Senha" id="Senha"></label>
+                            <span asp-valdation-for="Senha" class="red-text text-darken-4"></span>
+                        </div>
+                    </div>
+
+                    <div class="botoes">
+                        <button type="submit" class="waves-effect waves-light btn-small green darken-4">Login</button> &emsp;
+                        <a asp-controller="Usuarios" asp-action="Login">Não possuo uma conta</a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <environment include="Development">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+        <!--JQUERY CDN-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    </environment>
+    <!--Se não estiver em densevolvimento carrega o que estiver dentro-->
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    </environment>
+</body>
+</html>

@@ -1,0 +1,4 @@
+DAL -- CAMADA DE ACESSO A DADOS
+ConfiguracaoRepositorioExtencion == estende a classe startup, por isso o Extencion
+Os métodos determinam o comportamento dos objetos de uma classe.Podem alterar o estado de um objeto.
+Cookie são arquivos de internet que armazenam temporariamente o que o usuario está visitando na rede
